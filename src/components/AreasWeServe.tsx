@@ -76,7 +76,17 @@ export default function AreasWeServe() {
   const currentSerp = getSerpData();
 
   const serpCitiesList = ["Visakhapatnam", "Vijayawada", "Guntur", "Rajahmundry", "Thane", "Nellore"];
-  const serpProductsList = ["Stainless Steel Pipes", "Industrial Forged Flanges", "Heavy Buttweld Fittings", "Bright Annealed Coils"];
+  const serpProductsList = [
+    "Stainless Steel Pipes",
+    "Industrial Forged Flanges",
+    "Heavy Buttweld Fittings",
+    "Bright Annealed Coils",
+    "Ss sheet",
+    "Ss fastener",
+    "Ss flange",
+    "Ss fittings",
+    "Ss valve"
+  ];
 
   return (
     <section className="py-20 bg-[#F9F6EE] border-t border-gray-200/80 relative overflow-hidden" id="regional-supply-hubs">

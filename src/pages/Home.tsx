@@ -906,7 +906,7 @@ export default function Home({ onNavigate }: HomeProps) {
                 Dinesh MohanlalJI Rajguru
               </p>
               <p className="text-xs md:text-sm text-[#64748B] leading-relaxed font-light font-sans">
-                Every success has a story, and ours began with struggle, sacrifice, and the courage to keep moving forward when times were toughest. Through years of dedication, hard work, and an unwavering belief in quality, our Founder & CEO transformed a vision into one of the most trusted names in stainless steel products. Today, we proudly serve customers across <strong className="text-[#0A5A7D]">Visakhapatnam</strong> and <strong className="text-[#0A5A7D]">Arunachal Pradesh</strong>, building lasting relationships through reliability, integrity, and excellence.
+                Every success has a story, and ours began with struggle, sacrifice, and the courage to keep moving forward when times were toughest. Through years of dedication, hard work, and an unwavering belief in quality, our Founder & CEO transformed a vision into one of the most trusted names in stainless steel products. Today, we proudly serve customers across <strong className="text-[#0A5A7D]">Visakhapatnam</strong> and <strong className="text-[#0A5A7D]">Andhra Pradesh</strong>, building lasting relationships through reliability, integrity, and excellence.
               </p>
             </div>
           </div>

@@ -45,7 +45,7 @@ export default function About({ onNavigate }: AboutProps) {
       <section className="relative py-16 border-b border-gray-200/60 bg-[#F2F7FB] mb-16">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <span className="about-page-anim text-xs font-bold tracking-[0.3em] text-[#0A5A7D] uppercase block mb-3">
-            VISAKHAPATNAM & ARUNACHAL PRADESH
+            VISAKHAPATNAM & ANDHRA PRADESH
           </span>
           <h1 className="about-page-anim font-heading text-4xl md:text-7xl font-black text-[#101828] uppercase tracking-tighter mb-4">
             OUR LEGACY STORY

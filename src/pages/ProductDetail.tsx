@@ -476,7 +476,7 @@ const PRODUCT_TYPES_DATA: Record<string, Array<{ name: string; image: string; al
     { name: "ERW Pipe", image: "/ASTM Pipes & Tubes/ERW Pipe.jpeg", alt: "ERW black steel pipe designed for pipeline system integrations" },
     { name: "Lined and Clad Pipes", image: "/ASTM Pipes & Tubes/Lined and Clad Pipes.jpeg", alt: "Lined and clad steel tubes for extreme corrosive protection" },
     { name: "Seamless Steel Pipes", image: "/ASTM Pipes & Tubes/Seamless Steel Pipes.jpg", alt: "Sourcing certified seamless steel pipes from top global manufacturer" },
-    { name: "Stainless Steel Pipes", image: "/ASTM Pipes & Tubes/Stainless Steel Pipes.webp", alt: "Jindal stainless steel pipe of grade Ss 304 316 310 321 317 309" },
+    { name: "Stainless Steel Pipes", image: "/ASTM Pipes & Tubes/Stainless Steel Pipes.webp", alt: "Jindal stainless steel pipe of grade stainless steel 304 316 310 321 317 309" },
     { name: "Welded Steel Pipes", image: "/ASTM Pipes & Tubes/Welded Steel Pipes.png", alt: "Welded steel pipes with custom gauge and diameter specifications" }
   ],
   "electroplish-pipes-tubes": [
@@ -532,7 +532,7 @@ const PRODUCT_TYPES_DATA: Record<string, Array<{ name: string; image: string; al
     { name: "Hot Rolled Pickled and Oiled Coil", image: "/ss Sheets/Hot Rolled Pickled and Oiled Coil.jpg", alt: "Hot rolled pickled and oiled coil alongside cold rolled bright annealed stainless coil" },
     { name: "Hot Rolled Sheet", image: "/ss Sheets/Hot Rolled Sheet.jpg", alt: "Heavy duty hot rolled steel sheets and 316 cold rolled BA coil plate stock" },
     { name: "Big Coil Spring Wire", image: "/ss Sheets/big-coil-spring-wire.jpg", alt: "Precision big coil spring wire and industrial cold rolled BA coil full hard" },
-    { name: "Cold Stainless SS 304 Sheet", image: "/ss Sheets/cold stainless ss 304 sheet.jpg", alt: "Jindal stainless steel sheet of grade ss 304 bright annealed coil" },
+    { name: "Cold Stainless SS 304 Sheet", image: "/ss Sheets/cold stainless ss 304 sheet.jpg", alt: "Jindal stainless steel sheet of grade stainless steel 304 bright annealed coil" },
     { name: "Hot Rolled Steel Coil", image: "/ss Sheets/hot rolled steel coil .jpg", alt: "Heavy duty hot rolled steel coil and bright annealed coil distributor stock" }
   ],
   flanges: [

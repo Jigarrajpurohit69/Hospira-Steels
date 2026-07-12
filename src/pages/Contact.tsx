@@ -444,9 +444,9 @@ export default function Contact({ onNavigate }: ContactProps) {
             <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-gray-200 pb-4 gap-2">
               <div>
                 <span className="text-[10px] md:text-xs font-bold tracking-widest text-[#0A5A7D] uppercase block font-mono">LOGISTICS LOCATION HUBS</span>
-                <span className="text-sm sm:text-base text-[#101828] font-semibold uppercase">VISAKHAPATNAM HQ & ARUNACHAL PRADESH NETWORK</span>
+                <span className="text-sm sm:text-base text-[#101828] font-semibold uppercase">VISAKHAPATNAM HQ & ANDHRA PRADESH NETWORK</span>
               </div>
-              <span className="font-mono text-[10px] text-[#64748B] whitespace-nowrap">HQ: 17.6868° N | AR: 27.0844° N</span>
+              <span className="font-mono text-[10px] text-[#64748B] whitespace-nowrap">HQ: 17.6868° N | AP: 16.5062° N</span>
             </div>
             
             {/* Dark Styled Map Panel Layout */}
@@ -454,7 +454,7 @@ export default function Contact({ onNavigate }: ContactProps) {
               {/* Abstract luxury grid lines acting as map */}
               <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(rgba(10,90,125,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(10,90,125,0.08)_1px,transparent_1px)] bg-[size:16px_16px]" />
               
-              {/* Visual connection line between South (HQ) and North East (AR) */}
+              {/* Visual connection line between South (HQ) and AP network */}
               <div className="absolute top-[30%] right-[30%] w-[1px] h-[35%] bg-gradient-to-b from-[#0A5A7D]/40 to-transparent rotate-45 transform origin-top-left pointer-events-none" />
               
               {/* HQ pointer (Visakhapatnam) */}
@@ -466,12 +466,12 @@ export default function Contact({ onNavigate }: ContactProps) {
                 </span>
               </div>
 
-              {/* Arunachal Pradesh Hub Pointer */}
+              {/* Andhra Pradesh Hub Pointer */}
               <div className="absolute top-[20%] right-[25%] -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
                 <div className="w-3 h-3 bg-[#0A5A7D] rounded-full animate-ping absolute" />
                 <div className="w-3 h-3 bg-[#0A5A7D] rounded-full border border-white" />
                 <span className="bg-white border border-[#0A5A7D]/40 text-[#0A5A7D] text-[8px] font-bold font-mono px-2 py-1 rounded mt-1 whitespace-nowrap shadow-md">
-                  ARUNACHAL DISTRIB HUB (ITANAGAR)
+                  ANDHRA PRADESH DISTRIB HUB (VIJAYAWADA)
                 </span>
               </div>
 
@@ -479,7 +479,7 @@ export default function Contact({ onNavigate }: ContactProps) {
               <div className="relative z-10 self-start text-[10px] font-mono text-[#64748B] space-y-1.5 max-w-xs bg-white/80 p-2.5 rounded-xl border border-gray-200 shadow-sm">
                 <div className="text-[#0A5A7D] font-bold uppercase tracking-wider mb-1">LOCAL CO-ORDINATES</div>
                 <div>&gt; VIZAG HQ: NH-16 Access (0.1 KM) | Seaport (12.5 KM)</div>
-                <div>&gt; ARUNACHAL HUB: Direct supply lines to Itanagar & Pasighat</div>
+                <div>&gt; ANDHRA HUB: Direct supply lines to Vijayawada & Guntur</div>
                 <div>&gt; FREIGHT TRANSIT: Nationwide Industrial Logistics</div>
               </div>
 
@@ -492,7 +492,7 @@ export default function Contact({ onNavigate }: ContactProps) {
             <div className="bg-white border border-gray-200/80 p-4 rounded-xl space-y-2">
               <h5 className="text-[10px] text-[#0A5A7D] font-mono uppercase tracking-widest font-bold">Local Delivery & Regional Coverage</h5>
               <p className="text-[11px] text-[#64748B] leading-relaxed font-light">
-                Hospira Steel & Alloy delivers customized, heavy-duty industrial pipes, sheets, tubes, and fittings. We actively serve the major maritime industrial corridor of <strong>Visakhapatnam, Gajuwaka, and Andhra Pradesh</strong>, as well as providing direct critical supply lines for infrastructure, hydropower projects, and governmental construction throughout <strong>Arunachal Pradesh (including Itanagar, Pasighat, and Tawang)</strong>.
+                Hospira Steel & Alloy delivers customized, heavy-duty industrial pipes, sheets, tubes, and fittings. We actively serve the major maritime industrial corridor of <strong>Visakhapatnam, Gajuwaka, and Andhra Pradesh</strong>, as well as providing direct critical supply lines for infrastructure, projects, and industrial construction throughout <strong>Andhra Pradesh (including Vijayawada, Guntur, Nellore, and Tirupati)</strong>.
               </p>
             </div>
           </div>
