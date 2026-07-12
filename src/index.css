@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Syne:wght@500;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Cinzel Decorative", "Syne", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --text-xs: 0.85rem;      /* Increased from 0.75rem (12px) to 13.6px for improved readability of small details */
+  --text-sm: 0.975rem;     /* Increased from 0.875rem (14px) to 15.6px for standard body text and descriptors */
+  --text-base: 1.075rem;   /* Increased from 1rem (16px) to 17.2px for prominent paragraph content */
+  
+  --color-gold: #0A5A7D;
+  --color-gold-light: #1A8CAF;
+  --color-steel-blue: #0A5A7D;
+  --color-white-text: #101828;
+  --color-muted-text: #64748B;
+  --amber: #0A5A7D;
+  
+  /* Shimmer gradient custom animations */
+  --animate-shimmer: shimmer 2s linear infinite;
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+
+  /* Ken Burns background slideshow custom animations */
+  --animate-kenburns: kenburns 16s ease-in-out infinite alternate;
+  @keyframes kenburns {
+    0% { transform: scale(1.02) translate(0, 0); }
+    100% { transform: scale(1.15) translate(-1%, -0.5%); }
+  }
+}
+
+/* Custom global styles */
+body {
+  background-color: #F9F6EE;
+  color: #101828;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Ensure high contrast and high legibility for all small/slate/gray descriptors on cream BG */
+.text-slate-500,
+.text-gray-500,
+.text-slate-400,
+.text-gray-400,
+[class*="text-slate-500"],
+[class*="text-gray-500"],
+[class*="text-slate-400"],
+[class*="text-gray-400"],
+[class*="text-[#64748B]"] {
+  color: #2D3748 !important; /* Dark rich slate charcoal for perfect high-contrast */
+}
+
+/* Make small/utility text slightly larger for premium readability */
+.text-xs, 
+[class*="text-xs"] {
+  font-size: 0.9rem !important; /* Elevate xs size to be clear and readable */
+  font-weight: 500; /* Enhance weight slightly for crisp contrast */
+}
+
+.text-sm, 
+[class*="text-sm"] {
+  font-size: 1.05rem !important; /* Elevate sm size to be perfectly readable */
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EDE0;
+}
+::-webkit-scrollbar-thumb {
+  background: #EDE7D8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0A5A7D;
+}
+
+/* Glassmorphism style */
+.glass-panel {
+  background: rgba(253, 251, 247, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(10, 90, 125, 0.15);
+}
+
+/* Metallic text clipping */
+.text-metallic {
+  background: linear-gradient(135deg, #101828 30%, #0A5A7D 70%, #1A8CAF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #0A5A7D 0%, #1A8CAF 50%, #0A5A7D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Design theme classes */
+.font-display {
+  font-family: 'Oswald', sans-serif;
+}
+
+.gold-text {
+  color: #0A5A7D;
+}
+
+.gold-border {
+  border-color: rgba(10, 90, 125, 0.15);
+}
+
+.bg-surface {
+  background-color: #F9F6EE;
+}
+
+.bg-card {
+  background-color: #EDE7D8;
+}
+
+.metallic-gradient {
+  background: linear-gradient(135deg, #F9F6EE 0%, #F2EDE0 100%);
+}
+
+/* Texture Grain Overlay */
+.grain-overlay {
+  position: relative;
+}
+.grain-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  opacity: 0.015;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  z-index: 1;
+}
+
+/* Smooth pin horizontal containers */
+.horizontal-scroll-container {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+/* Lenis smooth scrolling rules */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* CUSTOM CURSOR STYLES */
+@media (pointer: fine) {
+  html, body {
+    cursor: none;
+  }
+  
+  a, button, [role="button"], input, select, textarea, [data-hover-scale] {
+    cursor: none !important;
+  }
+
+  .cursor {
+    width: 18px;
+    height: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s, width 0.2s, height 0.2s, background-color 0.2s;
+    mix-blend-mode: difference;
+    left: -100px;
+    top: -100px;
+  }
+
+  .cursor-ring {
+    width: 54px;
+    height: 54px;
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: transform 0.25s cubic-bezier(0.1, 0.8, 0.3, 1), width 0.3s, height 0.3s, opacity 0.3s, border-color 0.3s;
+    mix-blend-mode: difference;
+    opacity: 0.8;
+    left: -100px;
+    top: -100px;
+  }
+
+  /* Hover states */
+  .cursor.cursor-hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background: #ffffff;
+  }
+
+  .cursor-ring.cursor-hover {
+    transform: translate(-50%, -50%) scale(1.8);
+    border-color: #ffffff;
+    opacity: 1;
+  }
+}
+

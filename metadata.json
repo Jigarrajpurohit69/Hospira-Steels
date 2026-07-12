@@ -1,0 +1,6 @@
+{
+  "name": "Hospira Steel & Alloy",
+  "description": "Premium industrial product catalog, specs sheets, custom quote constructor, and corporate showcase.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
